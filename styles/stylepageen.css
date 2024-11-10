@@ -1,0 +1,425 @@
+section:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw 3vw 5.5vw;
+    background-color: rgb(191, 180, 200);
+}
+
+section:nth-of-type(1) article {
+    width: 42em;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+section:nth-of-type(1) h3 {
+    font-size: 6.25em;
+    color: var(--color-text);
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: .9em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+section:nth-of-type(1) p:first-of-type {
+    font-size: 1em;
+    color: white;
+    line-height: 1.5em;
+    color: var(--color-text);
+}
+
+section:nth-of-type(1) p:last-of-type {
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+section:nth-of-type(1) img {
+    width: 40vw;
+    height: 40vw;
+    position: relative;
+    margin-bottom: 1vw;
+    margin-right: 5vw;
+}
+
+section:nth-of-type(1) button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(191, 180, 200);
+    padding: 1em 3em;
+    text-transform: uppercase;
+    font-size: 1em;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2em;
+}
+
+section:nth-of-type(1) button:hover {
+    background-color: lightgray;
+}
+
+@media (min-width: 769px) {
+    section:nth-of-type(1) {
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    section:nth-of-type(1) article {
+        width: 42em; 
+        padding: 3vw; 
+    }
+
+    section:nth-of-type(1) h1 {
+        font-size: 6.25em; 
+    }
+
+    section:nth-of-type(1) img {
+        order: 2; 
+        margin: 0; 
+        width: 40vw; 
+        height: 40vw;
+    }
+    /* met behulp van chatgpt */
+}
+
+@media (max-width: 768px) {
+    section:nth-of-type(1) {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    section:nth-of-type(1) article {
+        width: 100%; 
+        padding: 1em; 
+    }
+
+    section:nth-of-type(1) h1 {
+        font-size: 3.5em; 
+    }
+
+    section:nth-of-type(1) img {
+        order: 3; 
+        margin: 1em 0 0 0; 
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+section:nth-of-type(2) button {
+    padding: 1.5em 4em;
+    border: none;
+    background-color: red;
+    color: var(--color-text);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5em;
+    margin-bottom: 2vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* margin-top: 1.5em; */
+}
+
+section:nth-of-type(2) button:hover {
+    background-color: darkred;
+}
+
+section:nth-of-type(4) button {
+    padding: 0.7em 2em;
+    border: none;
+    background-color: red;
+    color: var(--color-text);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2em;
+    margin-top: 1em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2em;
+}
+
+section:nth-of-type(2) {
+    text-align: center;
+    padding: 3em 0;
+    background-color: var(--bg-body);
+}
+
+section:nth-of-type(2) h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
+    font-size: 3em;
+    color: #D72B2B;
+    text-transform: uppercase;
+}
+
+section > ol {
+    display: flex;
+    gap: 1em;
+    overflow-x: hidden;
+    padding: 2em 0;
+    background-color: white;
+    list-style: none;
+    background-color: transparent; /*met behulp van chatgpt*/
+}
+
+section > ol > li {
+    flex-shrink:0;
+    flex-basis:20vw;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (width > 48em) {
+    section > ol > li {
+        flex-basis: 15vw;
+    }
+}
+
+section > ol img {
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+    border-radius: 50%;  
+}
+
+section:nth-of-type(3) ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /*met behulp van chatgpt*/
+}
+
+section:nth-of-type(3) h2 {
+    display: none;
+}
+
+section:nth-of-type(3) li {
+    width: calc(100%/2);
+}
+
+@media (width > 900px) {
+    section:nth-of-type(3) li {
+        width: calc(100%/4);;
+    }
+}
+
+section:nth-of-type(3) ul img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 1/1;
+}
+
+section:nth-of-type(4) {
+    text-align: center;
+    padding: 3em 4.5em;
+    /* margin-left: 3em;
+    margin-right: 5.5em; */
+}
+
+section:nth-of-type(4) h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    color: #D72B2B;
+    text-transform: uppercase;
+}
+
+section:nth-of-type(4) h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
+    font-size: 1.8em;
+    color: #D72B2B;
+    margin-top: 0;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+}
+
+section:nth-of-type(4) ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    justify-items: start;
+    list-style: none;
+    padding: 0 2em 0 2em;
+}
+
+section:nth-of-type(4) ul li {
+    width: 100%;
+    padding: 1.5em;
+    background-color: #f0f0f0;
+    border-radius: 1em;
+}
+
+section:nth-of-type(4) ul li h2 {
+    color: red;
+}
+
+section:nth-of-type(4) ul li p {
+    color: black;
+    margin: 0.5em 0;
+}
+
+@media (width > 700px) {
+    section:nth-of-type(4) ul {
+        grid-template-columns: 1fr 1fr;
+    }
+} /*met behulp van chatgpt en MDN*/
+
+@media (width > 1080px) {
+    section:nth-of-type(4) ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+section:nth-of-type(5) {
+    background-color: red;
+    padding: 3em 5vw;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+section:nth-of-type(5) h2,
+section:nth-of-type(5) h3,
+section:nth-of-type(5) h4 {
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+section:nth-of-type(5) h3 {
+    font-size: 3em;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+section:nth-of-type(5) h4 {
+    font-size: 2em;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+}
+
+section:nth-of-type(5) h2 {
+    font-size: 1.5em;
+    margin-bottom: .5vw;
+}
+
+section:nth-of-type(5) form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+section:nth-of-type(5) form label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+section:nth-of-type(5) p {
+    color: white;
+    margin-top: .5vw;
+}
+
+section:nth-of-type(5) ::placeholder {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+}
+
+@media (width > 768px) {
+    section:nth-of-type(5) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        grid-template-rows: max-content 1fr;
+    }
+
+    section:nth-of-type(5) form {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    } /*met behulp van meneer 't Hooft*/
+}
+
+section:nth-of-type(5) form button {
+    padding: 0.7em 2em;
+    border: 2px solid white; 
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.3em;
+}
+
+section:nth-of-type(6) h2 {
+    display: none;
+}
+
+section:nth-of-type(6) ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section:nth-of-type(6) ul li {
+    position: relative; 
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+
+section:nth-of-type(6) ul li:last-child {
+    margin-right: 0;
+}
+
+section:nth-of-type(6) ul img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+section:nth-of-type(6) ul li::after {
+    content: ''; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent; 
+    border-bottom: 15px solid transparent; 
+    border-left: 25px solid white; 
+    transform: translate(-50%, -50%); 
+}
+
+@media (min-width: 769px) {
+    section:nth-of-type(6) ul {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+section.dark-mode {
+    background-color: #2c2c2c;
+}
+/* met behulp van chatgpt */
